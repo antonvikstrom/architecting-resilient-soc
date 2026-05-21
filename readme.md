@@ -24,15 +24,15 @@ The foundation of the lab is a network layout that creates strict, isolated "air
 ### Project Roadmap
 [**Part 1: Designing Infrastructure and Network Logic**](https://github.com/antonvikstrom/soc-01-infrastructure-network-logic)
 
-Establishes the physical and virtual foundation. This section covers basic hardware optimization, software repository setup, network zoning, building an asset inventory, and configuring the pfSense firewall to contain the lab's traffic.
+Covers hardware optimization, software repository setup, network zoning, building the asset inventory, and configuring the central pfSense firewall to safely contain traffic.
 
 **Part 2: Engineering Identity and Telemetry Visibility (In Progress)**
 
-Deploys a Windows Active Directory domain and configures the log collection pipeline. This phase focuses on hardening endpoints using Group Policies, deploying the Splunk agent, and sending high-quality logs to the SIEM.
+Focuses on deploying a Windows Active Directory domain, hardening endpoints using Group Policies, deploying the Splunk agent, and building the log collection pipeline.
 
 **Part 3: Validating Detection via Adversary Emulation (In Progress)**
 
-The final verification phase. This section uses Atomic Red Team to launch realistic attack scripts from the Attack Zone, proving that the monitoring setup accurately captures and alerts on malicious behavior.
+Uses Atomic Red Team to launch realistic attack scripts from the Attack Zone, proving that the monitoring setup accurately captures and alerts on malicious behavior.
 
 ### Key Takeaways
 Through designing this network, I learned how to isolate user traffic, log collection, and admin access. Setting up this model taught me how to stop attackers from communicating outside their designated zones and prevent them from tampering with core servers.
